@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  user-select: none;
+}
+
+h1 {
+  color: blue;
+  display: flex;
+  &:hover {
+    color: violet;
+  }
+}
+
+.box {
+  display: flex;
+  user-select: none;
+}
