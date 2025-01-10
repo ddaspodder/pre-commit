@@ -61,7 +61,7 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write",
-      "test"
+      "npm run test"
     ],
     "*.{css, scss, html}": [
       "prettier --write"
