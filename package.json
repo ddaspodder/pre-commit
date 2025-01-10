@@ -8,8 +8,7 @@
     "test": "jest --watchAll",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "lint:fix": "eslint --fix .",
-    "prepare": "husky"
+    "lint:fix": "eslint --fix ."
   },
   "author": "",
   "license": "ISC",
@@ -56,6 +55,11 @@
     "postcss-loader": "^8.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
