@@ -6,6 +6,7 @@
     "dev": "set API_BASE_URL=http://dummy-api2.dev.com && webpack serve --config webpack.dev.config.js",
     "build": "set API_BASE_URL=http://dummy-api.com && webpack --config webpack.config.js",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
     "test:staged": "jest --bail --findRelatedTests",
     "lint": "eslint .",
