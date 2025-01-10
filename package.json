@@ -7,6 +7,7 @@
     "build": "set API_BASE_URL=http://dummy-api.com && webpack --config webpack.config.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:staged": "jest --bail --findRelatedTests",
     "lint": "eslint .",
     "format": "prettier --write .",
     "lint:fix": "eslint --fix ."
@@ -66,7 +67,8 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write",
-      "npm run test"
+      "npm run test:staged",
+      "git add"
     ],
     "*.{css, scss, html}": [
       "prettier --write"
