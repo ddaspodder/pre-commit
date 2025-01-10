@@ -1,6 +1,6 @@
 import userEvent from "@testing-library/user-event";
 import Counter from "./Counter";
-import { screen, render, waitFor } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 
 test("component is rendered", () => {
   render(<Counter />);

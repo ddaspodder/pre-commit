@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "set API_BASE_URL=http://dummy-api2.dev.com && webpack serve --config webpack.dev.config.js",
     "build": "set API_BASE_URL=http://dummy-api.com && webpack --config webpack.config.js",
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "lint": "eslint .",
     "format": "prettier --write .",
     "lint:fix": "eslint --fix ."
@@ -65,7 +66,7 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write",
-      "jest"
+      "npm run test"
     ],
     "*.{css, scss, html}": [
       "prettier --write"
