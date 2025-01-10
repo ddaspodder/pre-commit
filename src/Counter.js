@@ -7,7 +7,7 @@ function Counter() {
     <div>
       <h1>Counter</h1>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 2)}>Click me</button>
+      <button onClick={() => setCount(count + 3)}>Click me</button>
     </div>
   );
 }
